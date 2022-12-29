@@ -1,0 +1,44 @@
+@font-face {
+    font-family: myFont3; 
+    src: url(Quicksand-Bold.ttf)
+}
+body {
+    background-image: url(space2.jpg);
+}
+#vidpagetag {
+    color: #CD58F9; 
+    background-color: rgb(19, 18, 23);
+    border: 2.5px solid #CD58F9; 
+    border-radius: 24px;
+    font-size: 30px; 
+    width: 400px; 
+    height: auto; 
+    text-align: center;
+}
+.vidsection {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
+#vidinfo {
+    color: rgb(92, 244, 255); 
+    font-size: 20px; 
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(19, 18, 23); 
+    border: 3px solid rgb(92, 244, 255);  
+    width: fit-content;
+    padding: 10px;
+    font-family: myFont3;
+    border-radius: 10px;
+}
+#vidcontainer {
+    margin-left: -200px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 100px; 
+}

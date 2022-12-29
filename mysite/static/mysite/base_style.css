@@ -1,0 +1,81 @@
+/* The navigation bar */
+@font-face {
+    font-family: myFont; 
+    src: url(font/Quicksand-Medium.ttf)
+}
+@font-face {
+    font-family: myFont2;
+    src: url(font/PressStart2P-Regular.ttf);
+}
+* {
+    font-family: myFont;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(img/grid.webp);
+    background-color:#B6C4EC; 
+    display: block; 
+    padding-bottom: 20%; 
+}
+
+.navbar {
+    z-index: 1; 
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: black; 
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+#pagelinks {
+    display: flex; 
+}
+
+#pagelinks > a {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change background on mouse-over */
+.navbar a:hover { 
+    background: #171717;
+}
+
+#pagetitle {
+    position: fixed; 
+    z-index: 999;
+    display: flex;
+    border-radius: 25px; 
+   /* border: 3px solid #ad21ab;*/
+    height: 100px; 
+    width: 430px;
+    color: black; 
+    margin-top: 2.5%; 
+    margin-left: 10%; 
+    background-color: white;
+    border: 3px solid #6c6c6c; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#pagetitle > p {
+    text-align: center; 
+    font-size: 40px; 
+    font-family: myFont2;
+}
+
+#pagecontent {
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; 
+    margin-left: 8%; 
+    position: relative; 
+    top: 200px; 
+}

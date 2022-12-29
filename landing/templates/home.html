@@ -1,0 +1,34 @@
+{% extends "mysite/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block page_heading %}<p>andres ayerbe<p>{% endblock %}
+
+{% block page_content %}
+<div id = 'homecontainer'>
+    <div id = 'socialscontainer'>
+        <a href = "https://github.com/ayerbea" target = blank> <img src = "{% static 'img/github.png' %}" width = 70px height = auto > </a>
+        <a href = "https://www.linkedin.com/in/andres-ayerbe-762085249/" target = blank> <img src = "{% static 'img/linkedin.png' %}" width = 70px height = auto > </a>
+        <a href = "mailto: ayerbea@umich.edu" target = blank> <img src = "{% static 'img/email2.png' %}" width = 70px height = auto > </a> 
+        <a href = "https://www.instagram.com/andresthecello/" target = blank> <img src = "{% static 'img/insta.png' %}" width = 70px height = auto > </a> 
+    </div>
+    <img src = "{% static 'img/headshot.jpg' %}" width = 30% height = auto id = 'photo'>
+    <div id = 'rightcol'>
+        <p id = "welcomemsg"> welcome to my page! </p>
+        <p id = "welcomeblurb"> 
+            I am currently completing a dual degree at the University of Michigan in Ann Arbor and am expected
+            to graduate in the summer of 2024. I am an experienced programmer and am aspiring to be a software
+            engineer when I graduate college with a B.S. in Computer Science. I am particularly interested
+            in fields which involve any type of mathematical modeling and computer vision. In addition, I am also
+            pursuing a B.Mus Cello Performance. I have been playing the cello for about 14 years now and have 
+            enjoyed a successful career in music and will always keep my instrument by my side as I continue on 
+            with Computer Science. Whether it be teaching on the side or performing small recitals every now and then,
+            music is something that will never escape my life. Please check out my video gallery page to watch me play!
+        </p>
+        <a href = "https://drive.google.com/file/d/1mBHjGGxCc1Silz3eGQZew4XvZWplCOo6/view?usp=sharing" target = blank id = "resumelink"> 
+            <div > click here for my resume/cv! </div>
+         </a>
+    </div>
+</div>
+{% endblock %}

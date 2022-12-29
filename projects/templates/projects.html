@@ -1,0 +1,26 @@
+{% extends "mysite/base.html" %}
+{% load static %}
+
+{% block title %} Projects {% endblock %}
+{% block page_heading %}<p>projects<p>{% endblock %}
+
+{% block page_content %} 
+<div id = "projcontainer">
+    {% for proj in projects %}
+    <div class = "projsection">
+            <div id = "projcard">
+                <div id = "titlecard">
+                    <div class = "projtitle">{{proj.title}}</div>
+                    <img src = "{% static proj.img_name %}" width = 200px height = auto class = 'projphoto'>
+                </div>
+                <div class = "projdescrip">
+                    <p id = "projblurb">{{proj.description}}</p>
+                    <p id = "projskills">
+                        <span>Related Skills:</span> {{proj.tools_used}}
+                    </p>
+                </div>
+            </div> 
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

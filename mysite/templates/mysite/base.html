@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css"  href= "{% static 'mysite/base_style.css' %}">
+        <link rel="stylesheet"  type="text/css"  href= "{% static 'landing/home_style.css' %}">
+        <link rel="stylesheet"  type="text/css"  href= "{% static 'video_gallery/videos_style.css' %}">
+        <link rel="stylesheet"  type="text/css"  href= "{% static 'projects/projects_style.css' %}">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+
+    <body>  
+        <div class="navbar">
+            <div id = "pagelinks">
+                <a href="{% url 'homepage' %}">home</a>
+                <a href="{% url 'videos' %}">video gallery</a>
+                <a href="{% url 'projects' %}">projects</a>
+            </div> 
+        </div>
+
+        <div id = "pagetitle"> {% block page_heading %}{% endblock %} </div>
+
+        <div id = "pagecontent">
+            {% block page_content %} {% endblock %}
+        </div>
+
+    </body>  
+</html>

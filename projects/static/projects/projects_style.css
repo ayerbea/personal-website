@@ -1,0 +1,61 @@
+@font-face {
+    font-family: myFont3; 
+    src: url(Quicksand-Bold.ttf)
+}
+
+#projcontainer {
+    display: flex; 
+    flex-direction: column;
+}
+
+.projsection {
+    display: flex;
+}
+
+#titlecard {
+    margin-right: 30px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 14px;  
+    align-items: center;
+}
+.projphoto {
+    border: 4px solid white; 
+    border-radius: 25px;
+}
+.projtitle {
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px; 
+    font-family: MyFont3; 
+    width: fit-content; 
+    color: rgb(144, 248, 124); 
+}
+#projcard {
+    display: flex; 
+    color: white; 
+    background-color: rgb(19, 18, 23);
+    border-radius: 25px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-right: 70px; 
+    padding: 20px; 
+    border: 3px solid rgb(144, 248, 124); 
+}
+
+#projdescrip {
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+    justify-content: space-evenly;
+}
+
+#projskills {
+    margin-top: 10px; 
+    justify-self: flex-end;
+    color: rgb(144, 248, 124); 
+}
+
+#projskills span {
+    font-family: MyFont3;
+}

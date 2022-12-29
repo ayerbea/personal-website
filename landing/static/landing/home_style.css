@@ -1,0 +1,50 @@
+#homecontainer {
+    display: flex; 
+    justify-content:center; 
+    gap: 30px; 
+    padding-right: 150px; 
+}
+
+#rightcol{
+    display: flex; 
+    flex-direction: column;
+    color: #CD58F9; 
+    background-color: white;
+    border: 2.5px solid #CD58F9; 
+    border-radius: 24px;
+    font-size: 40px; 
+    width: 500px; 
+    height: auto; 
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+}
+
+#welcomeblurb, a {
+    color: black; 
+    font-size: 20px; 
+    text-align: left;
+    text-decoration: none;
+    padding-left: 30px; 
+    padding-right: 30px; 
+}
+
+#resumelink {
+    border: 2px solid black; 
+    width: 300px; 
+    height: fit-content; 
+    border-radius: 10px;
+    align-self: center;
+}
+
+#photo {
+    border-radius: 10%;
+}
+
+#socialscontainer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px; 
+}
